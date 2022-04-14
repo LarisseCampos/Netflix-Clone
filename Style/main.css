@@ -1,0 +1,211 @@
+/*** Root é a variável que será aplicada no css para toda a página ***/
+
+
+:root {
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    
+}
+
+body {
+
+     background-color: var(--preto);
+     font-family:'Times New Roman', Times, serif;
+     color: white;
+
+}
+
+header .container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 0.8rem;
+    margin-top: 0.8rem;
+     
+    
+
+}
+
+.sinopse a{
+
+    text-decoration:underline;
+    color:white;
+}
+
+header .logo{
+
+    margin-right: 2rem;
+    margin-left: 0.4rem;
+    font-size: 40px;    
+
+}
+
+header img{
+    
+    width: 100px;
+    margin-right: 2.2rem;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+header nav a {
+
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 0.5rem;
+    margin-top: -5px;
+   
+}
+
+header nav a:hover{
+
+    color:#fff;
+
+}
+
+
+nav a .icon-user {
+
+    width: 40px;
+    margin-left: -5px;
+    margin-right: -10px;
+    
+}
+
+nav a i{
+
+    margin-right:5px ;
+    
+    
+}
+
+   
+.nav-lateral {
+
+    margin-top: -40px;
+    
+    
+}
+
+.icons{
+    
+    display: flex;
+    flex-direction: row;
+    align-items:center; 
+    justify-content:flex-end;
+    margin-right:1rem;
+         
+     
+}
+
+.container{
+    margin-left: 10px;
+}
+
+ 
+/***** Filme *****/
+
+.film-demon-slayer{
+
+    font-size: 1rem;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50) 100%), url(/Images/1000030.jpg);
+    height: 500px;
+
+/***** O cover foi usado para colocar a imagem cobrindo a caixa da qual pertence *****/
+    background-size: cover;
+
+/***** Display flex sempre coloca os itens em linha *****/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+ 
+
+.film-demon-slayer .sinopse {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    
+}
+
+.film-demon-slayer .container{
+    width: 70%;
+}
+
+.title {
+
+    margin-left: 20px;
+    margin-top: 15%;
+    font-size: 2.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sinopse{
+    font-size: 17px;
+    
+}
+
+.button-serie {
+
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 3px;
+    color: white;
+
+    padding: 15px 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top:15px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button-serie:hover{
+
+    background-color:var(--vermelho);
+    color: white;
+}
+
+.button-serie i{
+    margin-right: 8px;
+}
+
+.owl-carrosel owl-theme .box-filmes{
+    
+    display: block;
+    height: 100%;
+    width: 100%;
+    image-rendering: optimizespeed;
+    
+    
+}
+
+.carrosel-films{
+    padding: 10px;
+    margin: 20px;
+}
+
+.descricao-carrosel{
+
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
